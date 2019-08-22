@@ -42,6 +42,7 @@ private:
 
 	void UpdateCache()
 	{
+		// Assumes that an empty cache is an invalid cache... if that's not true, need to add an m_valid flag to the cache
 		if (m_cache.Empty())
 		{
 			InitialiseCache();
