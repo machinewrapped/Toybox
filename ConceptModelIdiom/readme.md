@@ -1,8 +1,6 @@
 Examination of the Concept Model idiom described at https://gracicot.github.io/conceptmodel/2017/09/13/concept-model-part1.html
 
-Two implementations of the same system:
-
-Alternative implementations, include one or the other to compare
+Two implementations of the same system, include one or the other to compare:
 
 1. Inheritance implementation uses a standard class hierarchy with virtual functions
 2. Concept Model implementastion adds a virtualising wrapper so that non-related types can be used as tasks 
