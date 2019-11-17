@@ -10,11 +10,13 @@ As can be seen, several of the advantages claimed for the Concept Model idiom ar
 inherently related to the Concept Model idiom.
 
 Claim 1: "First, it enable polymorphism with a natural syntax. It looks uniform, and also has a lighter syntax."
+
 Conclusion: An identical syntax can be achieved using standard polymorphism
 
 Claim 2: "Second, it avoid heap allocation. Yes indeed, even if we pass around our object inside a unique pointer internally...
     In this example, t is pushed into the list conditionally. If we don’t need heap allocation and polymorphism, 
     we can decide at runtime to not use it."
+    
 Conclusion:
     Both implementations have an identical number of heap allocations at exactly the same points (the make_unique call in task's constructor).
     Similarly, the compiler will bypass the vtable when calling a method on a concrete object, so the virtualisation overhead is avoided 
