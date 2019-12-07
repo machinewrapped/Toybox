@@ -16,6 +16,5 @@ for root, dirs, files in os.walk(source):
             fullpath = os.path.join(root, folder)
             newpath = os.path.join(newroot, folder)
             print('Copying ' + fullpath + ' to ' + newpath)
-            shutil.copytree(fullpath, newpath)
+            shutil.copytree(fullpath, newpath, dirs_exist_ok = True)
 
-            
